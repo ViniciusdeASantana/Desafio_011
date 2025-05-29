@@ -6,5 +6,6 @@
 
     /* type */
     --font-base: 'archivo';
-    --font-secondary: 'andada-pro'
+    --font-secondary: 'andada-pro';
+    --font-tertiary: 'open-sans';
 }

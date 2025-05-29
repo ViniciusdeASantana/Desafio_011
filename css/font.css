@@ -7,3 +7,8 @@
     font-family: andada-pro;
     src: url(../fonts/andada-pro.ttf);
 }
+
+@font-face {
+    font-family: open-sans;
+    src: url(../fonts/open-sans.ttf);
+}
