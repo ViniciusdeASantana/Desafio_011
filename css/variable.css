@@ -1,0 +1,10 @@
+:root {
+    /* color */
+    --cor01: #F1A5B1;
+    --cor02: #0B0A0A;
+    --cor03: #ffffff;
+
+    /* type */
+    --font-base: 'archivo';
+    --font-secondary: 'andada-pro'
+}
