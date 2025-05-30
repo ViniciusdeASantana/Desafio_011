@@ -24,6 +24,9 @@ body {
     max-width: 1216px;
     margin: 0 auto;
     padding: 24px 23px 0px;
+
+    @media(min-width: 1024px) {
+    }
 }
 
 /* Top site */
@@ -36,7 +39,6 @@ body {
     @media(min-width: 768px) {
         justify-content: space-between;
         align-items: center;
-        padding: 0px 32px;
     }
 }
 
@@ -77,15 +79,33 @@ body {
 
 .main-container {
     display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+
+    @media(min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .hero-img {
-    width: 250px;
-    height: 184px;
+    width: 320px;
+    height: 280px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap-reverse;
 
+    @media(min-width: 768px) {
+        width: 327px;
+        height: 300px;
+    }
+
+    @media(min-width: 1024px) {
+        width: 574px;
+        height: 423px;
+    }
 }
 
 .content-wrapper {
@@ -94,10 +114,10 @@ body {
     flex-direction: column;
 
     @media(min-width: 768px) {
-        justify-content: center;
         max-width: 448px;
         margin: 0 auto;
     }
+
 }
 
 .content-wrapper__creator {
@@ -106,6 +126,11 @@ body {
     font-size: 16px;
     font-family: var(--font-tertiary);
     margin-bottom: 8px;
+
+    @media(min-width: 1024px) {
+        font-size: 20px;
+        padding-top: 144px;
+    }
 }
 
 .content-wrapper__title {
@@ -114,6 +139,10 @@ body {
     font-size: 40px;
     font-family: var(--font-secondary);
     margin-bottom: 32px;
+
+    @media(min-width: 1024px) {
+        font-size: 64px;
+    }
 }
 
 .content-wrapper__paragraph {
@@ -122,13 +151,13 @@ body {
     font-size: 16px;
     line-height: 150%;
     margin-bottom: 40px;
+
+    @media(min-width: 1024px) {
+        font-size: 24px;
+    }
 }
 
 /* Button */
-
-.wrapper-btn {
-    display: flex;
-}
 
 .wrapper-btn__group {
     display: flex;
@@ -137,10 +166,11 @@ body {
 
     gap: 32px;
 
-    @media(min-width: 768px) {
-        justify-content: center;
-        max-width: 448px;
-        margin: 0 auto;
+    @media(min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
     }
 }
 
@@ -170,5 +200,9 @@ body {
     font-family: var(--font-alternative);
     font-weight: 700;
     font-size: 18px;
+
+    @media(min-width: 1024px) {
+        font-size: 14px;
+    }
 }
 
