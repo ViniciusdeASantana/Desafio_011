@@ -86,8 +86,12 @@ body {
     @media(min-width: 1024px) {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
+        gap: 64px;
+    }
+
+    @media(min-width: 1440px) {
+        max-width: 1216px;
     }
 }
 
@@ -96,6 +100,7 @@ body {
     height: 280px;
     display: flex;
     justify-content: center;
+    align-self: center;
 
     @media(min-width: 768px) {
         width: 327px;
