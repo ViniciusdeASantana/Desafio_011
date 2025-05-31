@@ -169,8 +169,8 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
     gap: 32px;
+    padding-bottom: 32px;
 
     @media(min-width: 1024px) {
         display: flex;
